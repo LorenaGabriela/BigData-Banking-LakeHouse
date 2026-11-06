@@ -1,0 +1,14 @@
+We'll implement this in stages:
+1. Configure and validate PySpark.
+2. Connect Spark to PostgreSQL through JDBC.
+3. Read individual tables and inspect schemas.
+4. Build a reusable ingestion framework instead of writing one script per table.
+5. Implement Bronze ingestion using Delta Lake.
+6. Add logging, error handling, and ingestion metadata.
+7. Prepare incremental ingestion.
+
+---validation:
+python --version
+java -version
+pip show pyspark
+pip show delta-spark
