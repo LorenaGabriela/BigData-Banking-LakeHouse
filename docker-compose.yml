@@ -1,0 +1,12 @@
+services:
+  banking-lakehouse:
+    build: .
+    container_name: banking-lakehouse
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+      PYTHONUNBUFFERED: "1"
+    command: python main.py
